@@ -1,6 +1,8 @@
+"use client"
 import React from 'react'
 import { FcGoogle } from "react-icons/fc";
 import Link from 'next/link';
+import Image from 'next/image';
 
 const SignUpPage = () => {
   return (
@@ -9,8 +11,13 @@ const SignUpPage = () => {
             <div className='w-full py-8 flex justify-center font-semibold text-[20px] text-white'>
                 <p>Get reminders on all your planned expenses</p>
             </div>
-            <div className='w-full h-[400px]'>
-                <img className='w-full h-full object-contain' src="./imgsign.svg" alt="" />
+            <div className='w-full flex items-center justify-center'>
+                {/* <img className='w-full h-full object-contain' src="./imgsign.svg" alt="" /> */}
+                <Image 
+                src='./imgsign.svg'
+                width={300}
+                height={300}
+                />
             </div>
         </div>
         <div className='lg:w-[50%] w-full lg:px-8 px-4 py-3'>

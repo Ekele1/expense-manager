@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import OTP from '../components/otp'
 import { toast, ToastContainer } from 'react-toastify'
+import Image from 'next/image'
 
 const ForgotPassword = () => {
     const [showOtp, setShowOtp] = useState(false)
@@ -34,7 +35,12 @@ const ForgotPassword = () => {
             <OTP /> :
             <div className='w-full'>
             <div className='w-full flex justify-center'>
-                <img src="./loginicon.svg" alt="" />
+                {/* <img src="./loginicon.svg" alt="" /> */}
+                <Image 
+                 src='./loginicon.svg'
+                 width={200}
+                 height={300}
+                />
             </div>
             <div className='w-full flex flex-col items-center gap-[10px]'>
                 <p>For verification</p>

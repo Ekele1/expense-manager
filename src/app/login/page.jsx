@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { FaEyeSlash } from "react-icons/fa6";
 import { IoIosEye } from "react-icons/io";
 import Link from 'next/link';
+import Image from 'next/image';
 
 const LoginPae = () => {
     const [showPassword, setShowPassword] = useState(false)
@@ -59,9 +60,12 @@ const LoginPae = () => {
             </div>
         </div>
         <div className='w-[50%] hidden lg:flex items-center justify-center bg-gray-300'>
-            {/* <div className='w-full h-screen'> */}
-                <img className='w-full h-full object-contain' src="./loginillustration.svg" alt="illustration" />
-            {/* </div> */}
+            {/* <img className='w-full h-full object-contain' src="./loginillustration.svg" alt="illustration" /> */}
+            <Image 
+             src='./loginillustration.svg'
+             width={500}
+             height={300}
+            />
         </div>
     </div>
   )

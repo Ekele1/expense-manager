@@ -11,7 +11,7 @@ import { RiLoginBoxFill } from "react-icons/ri";
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false)
   return (
-    <div className="w-full flex items-center justify-center">
+    <div className="w-full flex items-center justify-center bg-white fixed mb-20">
     <div className="w-full h-[70px] border-b-2 border-b-slate-200 flex items-center justify-between">
       <div className="w-max h-[80%] px-1">
         <img className='w-full h-full object-contain' src="./vercel.svg" alt="" />
