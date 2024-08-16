@@ -5,7 +5,7 @@ import Link from 'next/link';
 const SignUpPage = () => {
   return (
     <div className='w-full flex'>
-        <div className='w-[50%] hidden lg:flex lg:flex-col bg-blue-800'>
+        <div className='w-[50%] hidden lg:flex lg:flex-col bg-blue-800 py-10'>
             <div className='w-full py-8 flex justify-center font-semibold text-[20px] text-white'>
                 <p>Get reminders on all your planned expenses</p>
             </div>

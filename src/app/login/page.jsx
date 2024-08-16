@@ -37,8 +37,8 @@ const LoginPae = () => {
                     }
                 </div>
             </div>
-            <div className='w-[70%] mt-3 flex justify-end text-blue-500 cursor-pointer'>
-                <p>Forgot Password?</p>
+            <div className='w-[70%] mt-3 flex justify-end text-blue-500'>
+                <Link href='/forgotpassword' className='cursor-pointer'>Forgot Password?</Link>
             </div>
             <div className='w-full mt-3 flex bg:gap-[30px] gap-[10px]'>
                 <button className='lg:w-[20%] w-[45%] bg-blue-800 text-white h-[40px]'>
