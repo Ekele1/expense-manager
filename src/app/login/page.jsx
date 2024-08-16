@@ -65,6 +65,7 @@ const LoginPae = () => {
              src='./loginillustration.svg'
              width={500}
              height={300}
+             alt=''
             />
         </div>
     </div>

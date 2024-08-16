@@ -40,6 +40,7 @@ const ForgotPassword = () => {
                  src='./loginicon.svg'
                  width={200}
                  height={300}
+                 alt=''
                 />
             </div>
             <div className='w-full flex flex-col items-center gap-[10px]'>

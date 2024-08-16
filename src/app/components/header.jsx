@@ -7,14 +7,21 @@ import { FaHome } from "react-icons/fa";
 import { FcAbout } from "react-icons/fc";
 import { FcBusinessContact } from "react-icons/fc";
 import { RiLoginBoxFill } from "react-icons/ri";
+import Image from 'next/image';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false)
   return (
     <div className="w-full flex items-center justify-center bg-white fixed mb-20">
     <div className="w-full h-[70px] border-b-2 border-b-slate-200 flex items-center justify-between">
-      <div className="w-max h-[80%] px-1">
-        <img className='w-full h-full object-contain' src="./vercel.svg" alt="" />
+      <div className="w-max h-[80%] px-1 flex items-center">
+        {/* <img className='w-full h-full object-contain' src="./vercel.svg" alt="" /> */}
+        <Image 
+          src='./vercel.svg'
+          width={100}
+          height={100}
+          alt=''
+        />
       </div>
       <div className="w-[50%] h-[80%] hidden lg:flex items-center justify-around ">
         <Link href='/' className="cursor-pointer">Home</Link>

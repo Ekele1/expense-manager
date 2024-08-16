@@ -17,6 +17,7 @@ const SignUpPage = () => {
                 src='./imgsign.svg'
                 width={300}
                 height={300}
+                alt=''
                 />
             </div>
         </div>
