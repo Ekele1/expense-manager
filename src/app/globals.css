@@ -2,10 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+} */
+
+@keyframes typewriter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typewriter-text {
+  overflow: hidden; /* Ensures the text is hidden as it "types" */
+  white-space: nowrap; 
+  border-right: 2px solid white; /* Simulates a cursor */
+  width: 0;
+  animation: typewriter 4s steps(40) 0.5s infinite normal both, blink 0.75s step-end infinite;
+}
+
 
 

@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Heropage from "./components/heropage";
 
 export default function Home() {
   return (
-    <main className="w-full h-screen flex items-center justify-center">
-        <p>Home page comming soon</p>
+    <main className="">
+        <Heropage />
     </main>
   );
 }
