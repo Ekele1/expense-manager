@@ -12,9 +12,10 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="w-full flex items-center justify-center bg-white fixed mb-20">
-      <div className="w-full h-[70px] border-b-2 border-b-slate-200 flex items-center justify-between">
-        <div className="w-max h-[80%] px-1 flex items-center">
+    <div className="w-full flex items-center justify-center bg-black fixed mb-20">
+      <div className="w-full h-[70px] border-2 rounded-lg border-transparent flex items-center justify-between">
+      {/* <div className="absolute p-1 border-light border-[1px] rounded-lg"></div> */}
+        <div className="w-max h-[80%] bg-white px-1 flex items-center">
           <Image 
             src='/vercel.svg'
             width={100}
@@ -22,7 +23,7 @@ const Header = () => {
             alt='Vercel logo'
           />
         </div>
-        <div className="w-[50%] h-[80%] hidden lg:flex items-center justify-around">
+        <div className="w-[50%] h-[80%] hidden text-white lg:flex items-center justify-around">
           <Link href='/' className="cursor-pointer">Home</Link>
           <Link href='/aboutUs' className="cursor-pointer">About us</Link>
           <Link href='/contactUs' className="cursor-pointer">Contact</Link>
@@ -31,7 +32,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="lg:hidden text-[40px] px-4" onClick={() => setShowMenu(!showMenu)}>
-          { showMenu ? <MdOutlineCancelPresentation /> : <RxHamburgerMenu /> }
+          { showMenu ? <MdOutlineCancelPresentation color='white'/> : <RxHamburgerMenu color='white'/> }
         </div>
         <div className={`w-[80%] h-[500px] rounded flex flex-col gap-[20px] bg-blue-800 absolute top-[70px] right-0 px-4 py-4 transform ${
             showMenu ? 'translate-x-0' : 'translate-x-full'
