@@ -28,7 +28,7 @@
   white-space: nowrap; 
   border-right: 2px solid white; /* Simulates a cursor */
   width: 0;
-  animation: typewriter 4s steps(40) 0.5s infinite normal both, blink 0.75s step-end infinite;
+  animation: typewriter 8s steps(40) 0.5s infinite normal both, blink 0.75s step-end infinite;
 }
 
 @keyframes borderLight {
