@@ -20,7 +20,7 @@ const About = () => {
         <div className='w-full flex lg:flex-row flex-col gap-10 pt-10'>
           <div className='lg:w-[50%] w-full text-[18px] text-[#062134] font-semibold'>
             <p>
-            Whether you're looking to track daily expenses, set up monthly budgets, or monitor your financial progress over time, our tool 
+            Whether you&apos;re looking to track daily expenses, set up monthly budgets, or monitor your financial progress over time, our tool 
             offers the features you need to stay on top of your finances.
             </p>
           </div>
