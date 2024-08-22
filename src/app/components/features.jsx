@@ -26,7 +26,7 @@ const Features = () => {
                 </div>
                 <div className='w-auto pl-5 '>
                     <h1 className='font-bold text-[25px]'>Smart Budgeting Tools</h1>
-                    <p>Set budgets for different categories and receive alerts when you're nearing your limit. Expense manager helps you stay within your financial goals.</p>
+                    <p>Set budgets for different categories and receive alerts when you&apos;re nearing your limit. Expense manager helps you stay within your financial goals.</p>
                 </div>
             </div>
             <div className='w-full flex items-center pb-10'>
